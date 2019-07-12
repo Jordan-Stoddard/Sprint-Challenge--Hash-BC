@@ -1,17 +1,9 @@
 #  Hint:  You may not need all of these.  Remove the unused functions.
 from hashtables import (HashTable,
                         hash_table_insert,
-                        hash_table_remove,
-                        hash_table_retrieve,
-                        hash_table_resize)
+                        hash_table_retrieve
+                        )
 
-
-# loop through weights.
-# insert each weight into the hash as the key, and each weight index as the value
-# Check if limit - weight + current index = limit.
-# If it does, insert index of weight into set, if there's already an item in the set,
-# prepend or append depending on whether what's in the set is larger or smaller
-# than the new index.
 
 def get_indices_of_item_weights(weights, length, limit):
     ht = HashTable(16)
